@@ -1,13 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import {VerticalGraph} from "./VerticalGraph";
+import { VerticalGraph } from "./VerticalGraph";
 
 const Holdings = () => {
 
   const [allHoldings, setAllHoldings] = useState([]);
   useEffect(()=>{
     const token = localStorage.getItem("token");
-    axios.get("http://localhost:3002/allHoldings",{
+    axios.get("http://https://stonksy-backend.onrender.com/allHoldings",{
             headers: {
                 Authorization: `Bearer ${token}`,
             },

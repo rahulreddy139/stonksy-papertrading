@@ -12,7 +12,7 @@ function Login() {
     const handleLogin = async () => {
         try {
             const response = await axios.post(
-                "http://localhost:3002/login",
+                "http://https://stonksy-backend.onrender.com/login",
                 {
                     email,
                     password,
