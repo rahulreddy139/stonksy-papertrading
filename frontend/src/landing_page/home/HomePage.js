@@ -8,7 +8,7 @@ import Stats from "./Stats";
 function HomePage() {
     return (
         <>
-    
+
             <Hero/>
             <Awards/>
             <Stats/>
