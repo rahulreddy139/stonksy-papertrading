@@ -318,7 +318,7 @@ app.post("/login", async (req, res) => {
   }
 );
 
-app.listen(3002,()=>{
+app.listen(PORT, () => {
     console.log("App started");
     mongoose.connect(uri);
     console.log("db connected");
