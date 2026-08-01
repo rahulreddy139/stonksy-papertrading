@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import "./dashboard/index.css";
 import Footer from "./landing_page/Footer";
 import Navbar from "./landing_page/Navbar";
 
@@ -12,7 +13,7 @@ import Login from "./landing_page/signup/Login";
 import Signup from "./landing_page/signup/Signup";
 import SupportPage from "./landing_page/support/SupportPage";
 
-import Dashboard from "./dashboard/components/Dashboard";
+import Home from "./dashboard/components/Home";
 
 function LandingLayout({ children }) {
   return (
@@ -91,7 +92,7 @@ export default function App() {
           }
         />
 
-        <Route path="/dashboard/*" element={<Dashboard />} />
+        <Route path="/dashboard/*" element={<Home />} />
 
         <Route
           path="*"

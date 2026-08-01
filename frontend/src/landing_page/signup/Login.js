@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
@@ -20,7 +19,7 @@ function Login() {
                 }
             );
             localStorage.setItem("token", response.data.token);
-            window.location.href = "http://localhost:3001";
+            navigate("/dashboard");
 
             console.log(response.data);
         } catch (err) {
