@@ -14,7 +14,7 @@ const BuyActionWindow = ({ uid }) => {
 
   const handleBuyClick = () => {
     
-    axios.post("http://https://stonksy-backend.onrender.com/newOrder", {
+    axios.post("https://stonksy-backend.onrender.com/newOrder", {
         name: uid,
         qty: stockQuantity,
         price: stockPrice,

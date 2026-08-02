@@ -7,7 +7,7 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
   useEffect(()=>{
     const token = localStorage.getItem("token");
-    axios.get("http://https://stonksy-backend.onrender.com/allHoldings",{
+    axios.get("https://stonksy-backend.onrender.com/allHoldings",{
             headers: {
                 Authorization: `Bearer ${token}`,
             },
