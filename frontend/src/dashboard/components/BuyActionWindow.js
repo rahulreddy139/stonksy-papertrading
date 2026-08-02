@@ -12,18 +12,31 @@ const BuyActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0);
 
-  const handleBuyClick = () => {
-    
-    axios.post("https://stonksy-backend.onrender.com/newOrder", {
-        name: uid,
-        qty: stockQuantity,
-        price: stockPrice,
-        mode: "BUY",
-    });
+  const handleBuyClick = async () => {
+    try {
+      const token = localStorage.getItem("token");
 
+      const response = await axios.post(
+        "https://stonksy-backend.onrender.com/newOrder",
+        {
+          name: uid,
+          qty: stockQuantity,
+          price: stockPrice,
+          mode: "BUY",
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
-    generalContext.closeBuyWindow();
-    
+      console.log(response.data);
+
+      generalContext.closeBuyWindow();
+    } catch (err) {
+      console.log(err.response?.data || err.message);
+    }
   };
 
   const handleCancelClick = () => {

@@ -226,17 +226,62 @@ app.get('/allPositions', verifyToken,async(req,res)=>{
   let allPositions = await PositionsModel.find({});
   res.json(allPositions);
 });
-app.post('/newOrder', verifyToken,async(req,res)=>{
-  let newOrder=new OrdersModel({
-    name: req.body.name,
-    qty: req.body.qty,
-    price: req.body.price,
-    mode: req.body.mode,
-  });
+app.post("/newOrder", verifyToken, async (req, res) => {
+  try {
+    const { name, qty, price, mode } = req.body;
 
+    // Save Order
+    const newOrder = new OrdersModel({
+      name,
+      qty,
+      price,
+      mode,
+    });
 
-  newOrder.save();
-  res.send("hi ra baabu");
+    await newOrder.save();
+
+    // BUY Logic
+    if (mode === "BUY") {
+      let holding = await HoldingsModel.findOne({ name });
+
+      if (holding) {
+        // calculate new average
+        const totalQty = holding.qty + Number(qty);
+
+        const avgPrice =
+          (holding.avg * holding.qty + Number(price) * Number(qty)) /
+          totalQty;
+
+        holding.qty = totalQty;
+        holding.avg = avgPrice;
+        holding.price = Number(price);
+
+        await holding.save();
+      } else {
+        const newHolding = new HoldingsModel({
+          name,
+          qty: Number(qty),
+          avg: Number(price),
+          price: Number(price),
+          net: "0%",
+          day: "0%",
+        });
+
+        await newHolding.save();
+      }
+    }
+
+    res.status(200).json({
+      message: "Order Placed Successfully",
+    });
+
+  } catch (err) {
+    console.log(err);
+
+    res.status(500).json({
+      message: "Internal Server Error",
+    });
+  }
 });
 app.post("/signup", async (req, res) => {
     try {
