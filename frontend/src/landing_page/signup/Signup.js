@@ -11,7 +11,7 @@ function Signup() {
     const handleSignup = async () => {
         try {
             const response = await axios.post(
-                "https://https://stonksy-backend.onrender.com/signup",
+                "https://stonksy-backend.onrender.com/signup",
                 {
                     username,
                     email,
