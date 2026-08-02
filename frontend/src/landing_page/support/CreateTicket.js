@@ -13,14 +13,14 @@ function CreateTicket() {
             <li><a href="/" style={{ textDecoration: "none" }}>Offline Account Opening</a></li>
             <li><a href="/" style={{ textDecoration: "none" }}>Company, Partnership and HUF Account Opening</a></li>
             <li><a href="/" style={{ textDecoration: "none" }}>NRI Account Opening</a></li>
-            <li><a href="/" style={{ textDecoration: "none" }}>Charges at Zerodha</a></li>
-            <li><a href="/" style={{ textDecoration: "none" }}>Zerodha IDFC FIRST Bank 3-in-1 Account</a></li>
+            <li><a href="/" style={{ textDecoration: "none" }}>Charges at Stonksy</a></li>
+            <li><a href="/" style={{ textDecoration: "none" }}>Stonksy IDFC FIRST Bank 3-in-1 Account</a></li>
             <li><a href="/" style={{ textDecoration: "none" }}>Getting Started</a></li>
           </ul>
         </div>
 
         <div className="col-4 p-5 mt-5 mb-5">
-          <h4>Your Zerodha Account</h4>
+          <h4>Your Stonksy Account</h4>
           <ul>
             <li><a href="/" style={{ textDecoration: "none" }}>Login Credentials</a></li>
             <li><a href="/" style={{ textDecoration: "none" }}>Account Modification and Segment Addition</a></li>

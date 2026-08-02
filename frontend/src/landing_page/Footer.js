@@ -6,7 +6,7 @@ function Footer() {
         <div className="col">
           <img src="images/logo.svg" alt="stonsky Logo" style={{ width: "50%" }} />
           <p>
-            &copy; 2010 - 2026, Zerodha Broking Ltd.
+            &copy; 2010 - 2026, Stonksy Broking Ltd.
             <br />
             All rights reserved.
           </p>
@@ -18,8 +18,8 @@ function Footer() {
           <a href="/" style={{ textDecoration: "none" }}>Philosophy</a><br />
           <a href="/" style={{ textDecoration: "none" }}>Press & media</a><br />
           <a href="/" style={{ textDecoration: "none" }}>Careers</a><br />
-          <a href="/" style={{ textDecoration: "none" }}>Zerodha Cares (CSR)</a><br />
-          <a href="/" style={{ textDecoration: "none" }}>Zerodha.tech</a><br />
+          <a href="/" style={{ textDecoration: "none" }}>Stonksy Cares (CSR)</a><br />
+          <a href="/" style={{ textDecoration: "none" }}>Stonksy.tech</a><br />
           <a href="/" style={{ textDecoration: "none" }}>Open source</a><br />
           <a href="/" style={{ textDecoration: "none" }}>Referral program</a>
         </div>
@@ -51,13 +51,13 @@ function Footer() {
 
       <div className="mt-5 text-small text-muted" style={{ fontSize: "14px" }}>
         <p>
-          Zerodha Broking Ltd.: Member of NSE, BSE, MCX & MSEI – SEBI Registration no.:
-          INZ000031633 CDSL/NSDL: Depository services through Zerodha Broking Ltd. –
-          SEBI Registration no.: IN-DP-431-2019 Registered Address: Zerodha Broking Ltd.,
+          Stonksy Broking Ltd.: Member of NSE, BSE, MCX & MSEI – SEBI Registration no.:
+          INZ000031633 CDSL/NSDL: Depository services through Stonksy Broking Ltd. –
+          SEBI Registration no.: IN-DP-431-2019 Registered Address: Stonksy Broking Ltd.,
           #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar
           4th Phase, Bengaluru - 560078, Karnataka, India. For any complaints
-          pertaining to securities broking please write to complaints@zerodha.com,
-          for DP related to dp@zerodha.com.
+          pertaining to securities broking please write to complaints@Stonksy.com,
+          for DP related to dp@Stonksy.com.
         </p>
 
         <p>

@@ -18,7 +18,7 @@ function ProductPage() {
       <RightSection
         imageURL="/images/console.png"
         productName="Console"
-        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
+        productDescription="The central dashboard for your Stonksy account. Gain insights into your trades and investments with in-depth reports and visualisations."
         learnMore="Learn More"
       />
       <LeftSection
@@ -45,7 +45,7 @@ function ProductPage() {
         googlePlay="https://play.google.com"
         appleStore="https://apple.com"
       />
-      <p>Want to know more about our technology stack? Check out the Zerodha.tech blog.</p>
+      <p>Want to know more about our technology stack? Check out the Stonksy.tech blog.</p>
       <Universe />
     </>
   );
