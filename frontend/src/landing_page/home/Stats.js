@@ -17,8 +17,8 @@ function Stats() {
                 <div className="col-7 p-4"> 
                     <img src="/images/ecosystem.png" alt="hihi" style={{width:"100%"}}/>
                     <div className="text-center">
-                        <a href="" className="mx-5" style={{textDecoration:"none"}}>explore more rn</a>
-                        <a href="" style={{textDecoration:"none"}}>go see more rn</a>
+                        <a href="/" className="mx-5" style={{textDecoration:"none"}}>explore more rn</a>
+                        <a href="/" style={{textDecoration:"none"}}>go see more rn</a>
                     </div>
 
                 </div>
