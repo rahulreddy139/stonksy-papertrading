@@ -11,7 +11,7 @@ const Orders = () => {
     const token = localStorage.getItem("token");
 
     axios
-      .get("http://localhost:3002/allOrders", {
+      .get("https://stonksy-backend.onrender.com/allOrders", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

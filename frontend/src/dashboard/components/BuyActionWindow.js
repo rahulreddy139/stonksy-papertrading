@@ -22,7 +22,7 @@ const BuyActionWindow = ({ uid, actionType }) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:3002/newOrder",
+        "https://stonksy-backend.onrender.com/newOrder",
         {
           name: uid,
           qty: stockQuantity,
