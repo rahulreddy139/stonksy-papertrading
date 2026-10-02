@@ -8,7 +8,7 @@ const Positions = () => {
     const token = localStorage.getItem("token");
 
     axios
-      .get("https://stonksy-backend.onrender.com/allPositions", {
+      .get("http://localhost:3002/allPositions", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

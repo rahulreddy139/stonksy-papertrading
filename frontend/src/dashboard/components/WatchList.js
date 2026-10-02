@@ -100,6 +100,7 @@ const WatchListActions = ({ uid }) => {
   return (
     <span className="actions">
       <span>
+
         <Tooltip
           title="Buy(B)"
           placement="top"
@@ -114,16 +115,21 @@ const WatchListActions = ({ uid }) => {
           </button>
         </Tooltip>
 
+
         <Tooltip
           title="Sell(S)"
           placement="top"
           arrow
           TransitionComponent={Grow}
         >
-          <button className="sell">
+          <button
+            className="sell"
+            onClick={() => generalContext.openSellWindow(uid)}
+          >
             Sell
           </button>
         </Tooltip>
+
 
         <Tooltip
           title="Analytics(A)"
@@ -136,6 +142,7 @@ const WatchListActions = ({ uid }) => {
           </button>
         </Tooltip>
 
+
         <Tooltip
           title="More"
           placement="top"
@@ -146,6 +153,7 @@ const WatchListActions = ({ uid }) => {
             <MoreHoriz className="icon" />
           </button>
         </Tooltip>
+
       </span>
     </span>
   );
